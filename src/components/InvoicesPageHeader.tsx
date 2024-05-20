@@ -1,5 +1,12 @@
 type Props = {};
-const InvoicesPageHeader = (props: Props) => {
-  return <div>InvoicesPageHeader</div>;
+const InvoicesPageHeader = () => {
+  return (
+    <div>
+      <div>
+        <p>Invoices</p>
+        <p>7 invoices</p>
+      </div>
+    </div>
+  );
 };
 export default InvoicesPageHeader;

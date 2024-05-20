@@ -3,9 +3,10 @@ import ReactDOM from "react-dom/client";
 
 import "./global.css";
 import { BrowserRouter } from "react-router-dom";
-import AppRoutes, { router } from "./AppRoutes.tsx";
+import AppRoutes from "./AppRoutes.tsx";
 import Auth0ProviderWithNavigate from "./auth/Auth0ProviderWithNavigate.tsx";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { ThemeProvider } from "./ThemeContext.tsx";
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { refetchOnWindowFocus: false } },
@@ -16,7 +17,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <Auth0ProviderWithNavigate>
-          <AppRoutes />
+          <ThemeProvider>
+            <AppRoutes />
+          </ThemeProvider>
         </Auth0ProviderWithNavigate>
       </QueryClientProvider>
     </BrowserRouter>

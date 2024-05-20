@@ -3,6 +3,7 @@ import Layout from "./Layout/Layout";
 import AuthCallbackPage from "./Pages/AuthCallbackPage";
 import LandingPage from "./Pages/LandingPage";
 import ProtectedRoute from "./auth/ProtectedRoute";
+import InvoicesPage from "./Pages/InvoicesPage";
 
 const AppRoutes = () => {
   return (
@@ -22,7 +23,7 @@ const AppRoutes = () => {
           path="/invoices"
           element={
             <Layout>
-              <p>Invoices</p>
+              <InvoicesPage />
             </Layout>
           }
         />

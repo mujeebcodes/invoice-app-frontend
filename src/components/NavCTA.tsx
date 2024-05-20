@@ -14,7 +14,9 @@ import NavLinks from "./NavLinks";
 type Props = {};
 const NavCTA = (props: Props) => {
   const { isAuthenticated, loginWithRedirect, user } = useAuth0();
+
   console.log(user);
+
   return (
     <div>
       {isAuthenticated ? (

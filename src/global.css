@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "League Spartan", sans-serif;
+  transition: all 0.1s;
+}
+
 @layer base {
   :root {
     --background: 248 248 251;

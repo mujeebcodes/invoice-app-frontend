@@ -2,7 +2,7 @@ import illustration from "../assets/illustration-empty.svg";
 
 const NoInvoices = () => {
   return (
-    <div className="flex flex-col items-center gap-y-10">
+    <div className="flex flex-col items-center gap-y-10 mt-28">
       <div>
         <img src={illustration} alt="no invoice" />
       </div>
